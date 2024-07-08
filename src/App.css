@@ -1,0 +1,126 @@
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .List {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  /* Title */
+  .List h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Input Row */
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #input-title,
+  #input-description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #input-description {
+    height: 60px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Task List */
+  #tasklist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  #tasklist li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  #tasklist li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+  }
+  
+  #tasklist li.not-completed {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .status-btn,
+  .edit-btn,
+  .remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .status-btn {
+    color: #007bff;
+  }
+  
+  .status-btn:hover {
+    color: #0056b3;
+  }
+  
+  .edit-btn {
+    color: #ffc107;
+  }
+  
+  .edit-btn:hover {
+    color: #e0a800;
+  }
+  
+  .remove-btn {
+    color: #dc3545;
+  }
+  
+  .remove-btn:hover {
+    color: #c82333;
+  }
+  
